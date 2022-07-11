@@ -1,0 +1,136 @@
+// 200px 100px 200px 100px
+
+.timeLogContainer {
+   @include flexCenter(row);
+   justify-content: space-around;
+   background-color: $color2;
+   padding-top: 5px;
+   height: 50px;
+   width: 100%;
+   margin: 20px auto;
+   border: 0.5px black solid;
+}
+
+.fromToContainer {
+   @include flexCenter(row);
+   width: 200px;
+}
+
+.timeReg {
+   width: 60px;
+   text-align: center;
+   padding: 2px 5px;
+}
+
+.durationContainer {
+   width: 100px;
+   text-align: center;
+}
+
+.typeContainer {
+   width: 200px;
+   text-align: center;
+}
+
+.buttonContainer {
+   width: 100px;
+   text-align: center;
+}
+
+.timeDash {
+   width: 20px;
+   text-align: center;
+}
+
+.redeemed {
+   background-color: $color1op1;
+}
+
+.timeReg input{
+   width: 50px;
+   background: none; 
+   font-family: inherit;
+   font-size: inherit;
+   font-weight: inherit;
+   text-align: center;
+   
+}
+
+.fromToContainer:hover{
+   //border: 1px black solid;
+   //border-radius: 2px;
+}
+
+.timeReg input:focus{
+    outline: none;
+}
+
+.timeInputContainer {
+   
+   
+   display: inline;
+   font-family: inherit;
+   font-size: inherit;
+   padding: none;
+   background: none;
+}
+
+.inputClockLog {
+   width: 20px;
+   border: none;
+   display: inline;
+   font-family: inherit;
+   font-size: inherit;
+   padding: none;
+   background: none;
+}
+
+.inputClockLogSmall {
+   width: 10px;
+   border: none;
+   display: inline;
+   font-family: inherit;
+   font-size: inherit;
+   padding: none;
+   background: none;
+}
+
+.stopwatchTimer {
+   width: 200px;
+}
+
+.stopwatchContainer {
+   @include flexCenter(row);
+   justify-content: space-around;
+   background-color: $color2;
+   padding-top: 5px;
+   width: 90%;
+   height: 50px;
+   margin: 20px auto;
+   border: 0.5px black solid;
+}
+
+.pButtonStopwatch {
+   height: 30px;
+   width: 30px;
+   background-color: rgb(103, 165, 110);
+   @include flexCenter(row);
+}
+
+.spButtonStopwatch {
+   height: 30px;
+   width: 30px;
+   background-color: $color3;
+   @include flexCenter(row);
+}
+
+.mButtonStopwatch {
+   height: 30px;
+   width: 30px;
+   background-color: $color4;
+   @include flexCenter(row);
+}
+
+.stopwatchButton {
+   height: 40px;
+}

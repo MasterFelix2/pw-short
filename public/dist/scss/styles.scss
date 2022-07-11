@@ -1,0 +1,129 @@
+@import 'settings_profile','nav', 'base', 'campaign', 'multiplayer','login', 'gameMain', 'timeTracker';
+//'./variables'
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-size: 1.125rem;
+   font-family: 'Pridi', serif;
+   background-image: linear-gradient(rgba(235, 215, 182,0.75), rgba(235, 215, 182,0.75)), url("../../images/design/BackgroundTile1.jpg");
+   font-weight: 300;
+}
+
+//font-family: 'Pridi', serif;
+//font-family: 'Special Elite', cursive;
+
+.hzcenter {
+  @include flexCenter(row);
+  width: 80%;
+  margin: 0 auto;
+}
+
+.hozcenter {
+  @include flexCenter(row);
+}
+
+.specialElite {
+   font-family: 'Zilla Slab Highlight', cursive;
+   font-weight: 400;
+}
+
+h2, h3, h4 {
+   font-family: 'Pridi', serif;
+}
+
+.background{
+   background-image: url('../../images/login/LoginPage2.png');
+   background-position: center;
+   height: 900px;
+}
+
+.heading {
+   margin-top: 20px;
+}
+
+.mainContainer {
+   @include flexCenter(column);
+}
+
+.placeholder-page {
+   width: 20%;
+   margin: 20rem auto;
+}
+
+.homeLogo {
+   margin-top: 6rem;
+   font-size: 3rem;
+}
+
+button {
+   
+   padding: 16px 32px;
+   text-decoration: none;
+   font-size: 16px;
+   margin: 4px;
+   transition-duration: 0.5s;
+   cursor: pointer;
+   //background-color: $color3;
+   //color: $colorW;
+   background-color: $color1;
+   color: $color3;
+   font-weight:600;
+   border: 0.5px grey solid;
+   border-radius: 5px;
+}
+
+button:hover {
+  background-color: $color3;
+  color: $colorW;
+}
+
+.ppButton:hover{
+   cursor:pointer;
+   
+}
+
+.ppButton{
+   margin: 0 2px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.vtcenter {
+  @include flexCenter(column);
+  width: 90%;
+  margin: 20px auto;
+}
+
+.vtcentersmall {
+  @include flexCenter(column);
+}
+
+.basicDiv {
+   margin: 20px 50px 20px 50px;
+}
+
+.mainCont {
+   background-color: $color2op1;
+   border-radius: 5px;
+   width: 80%;
+   margin: 20px auto;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.campaignImg {
+   margin: 20px;
+   cursor: pointer;
+}
+
+@media(max-width: 768px){
+   .mainCont {
+      width: 95%;
+   }
+}

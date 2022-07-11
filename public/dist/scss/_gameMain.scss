@@ -1,0 +1,429 @@
+@import 'base';
+
+.game-main-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 80%;
+   margin: 0 auto;
+}
+
+.svgContainer {
+   border: 0.5px black solid;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   margin-right: 20px;
+}
+
+.hzcenterSVG {
+  @include flexCenter(row);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gameInfoGrid {
+   @include flexCenter(row);
+   justify-content: space-between;
+   width: 90%;
+   margin: 20px auto;
+   border: 0.5px solid black;
+   background-color: rgba(0,0,0,0.3);
+   border-radius: 5px;
+}
+
+.gameInfoEconomy {
+   display: flex;
+   width: 100%;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.GameInfoMainDiv{
+   margin-right: 20px;
+   width: 330px;
+   border: 0.5px black solid;
+   padding: 20px;
+   border-radius: 5px;
+   background-color: $color2;
+    //box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.actions-container{
+   margin: 20px;
+   //width: 330px;
+   border: 0.5px black solid;
+   padding: 20px;
+   border-radius: 5px;
+   background-color: $color2;
+    //box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.actions-container button {
+   font-size: 14px;
+   padding: 10px 22px;
+   background-color: $color1;
+   color: $colorB;
+   border: none;
+}
+
+.actions-container button:hover {
+  background-color: $color3;
+  color: $colorW;
+  
+}
+
+.economy-pseudo-button {
+   font-weight: bold;
+   cursor: pointer;
+}
+
+
+.player-names {
+   display: block;
+}
+
+.economyText {
+   cursor: pointer;
+}
+
+/*
+.svgColor {
+   background-color: rgb(164, 110, 110);
+}
+*/
+
+.inputDivision {
+   width: 35px;
+}
+
+.greyedOutButton {
+   background-color: darkgrey;
+}
+
+.createButton {
+   background-color: darkgreen;
+}
+
+.buttonInfo {
+   font-size: 10px;
+}
+
+.economyItems {
+   display: grid;
+   grid-template-columns: 5fr 1fr 1fr;
+}
+
+.gameInfoGridLeft {
+   @include gridCenter;
+   grid-template-columns: 100px 500px;
+   margin: 7px;
+}
+
+.gameInfoGridRight {
+   @include gridCenter;
+   grid-template-columns: 1fr 1fr 2fr 2fr;
+   width: 1000px;
+}
+
+.gameInfoGridSVG {
+   @include gridCenter;
+   grid-template-rows: 30px 100px 100px 80px;
+   margin: 10px 0px 10px 0px;
+   width: 250px;
+}
+
+.dashboardSvg {
+   background-color: rgba(186, 186, 186,0.9);
+   width: 250px;
+   height: 350px;
+   position: absolute;
+   left: 11%;
+   top: 165px;
+   border: black solid 1px;
+
+   cursor: move;
+   margin: auto;
+   user-select: none;
+}
+
+.dashboardSvgMin {
+   background-color: rgba(186, 186, 186,0.9);
+   width: 70px;
+   height: 40px;
+   position: absolute;
+   //left: 11%;
+   //top: 165px;
+   border: black solid 1px;
+   cursor: move;
+   margin: auto;
+   user-select: none;
+}
+
+.buttonSVG {
+   color: white;
+   padding: 8px 16px;
+   text-decoration: none;
+   font-size: 12px;
+   margin: 2px;
+   transition-duration: 0.5s;
+   cursor: pointer;
+   background-color: $color3;
+   border: 0.5px grey solid;
+   border-radius: 5px;
+}
+
+.reduceButton {
+   width: 10px;
+   height: 10px;
+   background-color: darkgrey;
+}
+
+.gameInfo h2 {
+   font-size: 1.5rem;
+}
+
+.gameInfoContainerInput {
+   @include gridCenter;
+   grid-template-columns: 50px 25px 40px 40px;
+}
+
+.gameInfoContainer {
+   @include gridCenter;
+   grid-template-columns: 200px 50px 40px;
+}
+
+.gameInfoContainerPre {
+   @include gridCenter;
+   grid-template-columns: 170px 80px;
+}
+
+.dashboardContainer {
+   width: 400px;
+}
+
+.continue_victory {
+   font-weight: bold;
+   cursor: pointer;
+}
+
+.leftDiv {
+   width: 140px;
+}
+
+.leftDivTerritory {
+   margin-right: 100px;
+}
+
+.selectionDashboardContainer {
+   @include flexCenter(row);
+   width: 600px;
+}
+
+.inputInfo {
+   width: 45px;
+   text-align: center;
+   margin: 0 10px;
+
+}
+
+@mixin flexNormal($direction) {
+   display: flex;
+   flex-direction: $direction;
+}
+
+.hzMacroContainer{
+  @include flexCenter(row);
+  width: 80%;
+  margin: 20px auto;
+}
+
+.gameInfoDashboard{
+  @include flexNormal(row);
+  width: 80rem;
+}
+
+/*
+.svgMain path {
+  fill-opacity:0.366795;
+  stroke:#000000;
+  stroke-width: 0.342299;
+  stroke-miterlimit: 4;
+  stroke-dasharray:none;
+}
+
+
+.svgMain path:hover {
+  fill-opacity: 1;
+  fill: #a07171;
+}
+*/
+
+svg  {
+   height: 1382.661;
+   width: 1206.579;
+}
+
+.hide-map-button {
+   display: none;
+}
+
+.sub-map-container {
+   @include flexCenter(column);
+}
+@media(min-width: 1900px){
+   .dashboardSvg {
+     // top: 165px;
+     // left: 17%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      //top: 165px;
+      //left: 17%;
+      position: absolute;
+   }
+}
+
+@media(max-width: 1900px){
+   .dashboardSvg {
+      top: 165px;
+      left: 13%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 165px;
+      left: 13%;
+      position: absolute;
+   }
+}
+
+@media(max-width: 1620px){
+   .game-main-container{
+      width: 90%;
+   }
+}
+@media(max-width: 1400px){
+   .game-main-container{
+      width: 90%;
+   }
+   .gameInfoEconomy {
+      flex-direction: column;
+      margin: 10px;
+   }
+}
+
+@media (max-width: 1240px){
+   .dashboardSvg {
+      top: 165px;
+      left: 9%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 165px;
+      left: 9%;
+      position: absolute;
+   }
+}
+
+@media (max-width: 1100px){
+   .hide-map-button {
+      display: block;
+   }
+
+   .dashboardSvg {
+      position: static;
+      margin: 20px;
+   }
+
+   .dashboardSvgMin {
+      position: static;
+      margin: 20px;
+   }
+
+   .game-main-container {
+      @include flexCenter(column);
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .gameInfoEconomy {
+      flex-direction: row;
+      margin: 10px;
+   }
+   .dashboardSvg {
+      top: 195px;
+      left: 20%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 195px;
+      left: 20%;
+      position: absolute;
+   }
+}
+
+@media (max-width: 940px){
+   .dashboardSvg {
+      top: 195px;
+      left: 16%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 195px;
+      left: 16%;
+      position: absolute;
+   }
+}
+
+@media (max-width: 880px){
+   .dashboardSvg {
+      top: 195px;
+      left: 12%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 195px;
+      left: 12%;
+      position: absolute;
+   }
+}
+@media (max-width: 800px){
+   .dashboardSvg {
+      top: 170px;
+      left: 9%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 170px;
+      left: 9%;
+      position: absolute;
+   }
+   .player-names {
+      display: none;
+      margin: 5px 0;
+   }
+}
+
+@media (max-width: 740px){
+   .dashboardSvg {
+      top: 170px;
+      left: 5%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 170px;
+      left: 5%;
+      position: absolute;
+   }
+}
+
+@media (max-width: 680px){
+   .dashboardSvg {
+      top: 170px;
+      left: 1%;
+      position: absolute;
+   }
+   .dashboardSvgMin {
+      top: 170px;
+      left: 1%;
+      position: absolute;
+   }
+}

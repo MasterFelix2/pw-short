@@ -1,0 +1,84 @@
+@import 'base';
+
+.container-flex {
+   display: flex;
+   justify-content: space-between;
+}
+
+nav {
+   @include flexCenter(row);
+   padding: 5px;
+   color: $color3;
+   background-image: linear-gradient(rgba(235, 215, 182,0.75), rgba(235, 215, 182,0.75)), url('../../images/components/NavbarBackground.svg');
+}
+
+.outside-burger-section {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: row;
+   width: 500px;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+.burger-section {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   margin-right: 20px;
+   margin-left: 20px;
+}
+
+.burger-menu {
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   display: none;
+   margin: 0 40px;
+}
+
+.burger-menu-toggler {
+   display: none;
+   margin: 0 40px;
+}
+
+.logo-nav {
+   margin-right: 20px;
+   margin-left: 20px;
+   width: 500px;
+}
+
+nav section a{
+   color: $color3;
+   margin: auto 10px;
+   text-decoration: none;
+}
+
+.sectionDiff {
+   background-color: $color3;
+   height: 5px;
+   width: 100%;
+}
+
+
+@media (max-width: 1220px){
+
+   .logo-nav {
+      display: none;
+   }
+
+}
+
+@media (max-width: 768px){
+   .outside-burger-section {
+      display: none;
+   }
+   .burger-menu {
+      display: flex;
+   }
+   .burger-menu-toggler {
+      display: flex;
+   }
+}

@@ -1,0 +1,59 @@
+.logoLogin {
+   margin: 5rem auto 0 auto;
+}
+
+.loginCont {
+   color: $color3;
+   @include gridCenter;
+   margin: 5rem 0;
+   padding: 1rem;
+   border: 1px solid grey;
+   background-color: $color2;
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   width: 300px;
+   justify-content: space-around;
+}
+
+.loginCont h1 {
+   margin-bottom: 1rem;
+   font-weight: 600;
+}
+
+.loginCont form {
+   @include flexCenter(column);
+   justify-content: space-around;
+   //color: $color3;
+   color: $color1op1;
+   font-size: 20px;
+   font-weight: bold;
+   margin: 10px auto;
+}
+
+.loginCont form input {
+   font-size: 18px;
+   margin: 10px auto;
+   padding: 3px 6px;
+   color: $color3;
+}
+
+.loginCont input {
+   height: 35px;
+}
+
+input[type="text"], textarea {
+   background-color : $color1op1; 
+   border: 1px solid grey;
+}
+
+@media (max-width: 768px){
+
+   .logoLogin {
+      display: none;
+   }
+
+   .loginCont {
+      margin: 5rem 0;
+   }
+
+}

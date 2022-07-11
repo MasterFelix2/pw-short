@@ -1,0 +1,56 @@
+/*
+$color1: rgb(31, 29, 29);
+$color2: rgb(110, 110, 110);
+$color3:rgb(245, 238, 213); //background color dashboard
+$color3:rgba(0, 0, 0,0.3);
+$quaternary: #9f8f77;
+*/
+
+$color1: rgb(235, 215, 182);
+$color1op1: rgba(235, 215, 182, 0.75);
+$color2: rgb(89, 101, 111);
+$color2op1: rgba(89, 101, 111, 0.75);
+$color2op2: rgba(128, 140, 150, 0.5);
+$color3: rgb(29, 30, 44);
+$color3op1: rgba(29, 30, 44, 0.75);
+$color4: rgb(147, 31, 29);
+$color4: rgba(147, 31, 29, 0.75);
+$color5: rgb(148, 28, 47);
+$colorB: black;
+$colorW: white;
+
+
+@mixin flexCenter($direction) {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: $direction;
+}
+
+@mixin gridCenter {
+   display: grid;
+   align-items: center;
+   justify-items: center;
+}
+
+.hzcenterTrim {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+   margin: 0 auto;
+   width: 100%;
+}
+
+$font-weights: (
+   "reg": 400,
+   "med": 500,
+   "bold": 700
+);
+
+$font-sizes: (
+   "small": 10px,
+   "med": 20px,
+   "big": 40px
+);
+

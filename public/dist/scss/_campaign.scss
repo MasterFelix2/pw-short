@@ -1,0 +1,37 @@
+@import 'base';
+
+.currentCampaignImg {
+    width: 42rem;
+    margin: 30px;
+}
+
+.goalBtn {
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: darkgrey;
+    border:none;
+    height: 30px;
+}
+
+.goalText {
+    font-size: medium;
+    width: 200px;
+}
+
+.goalInput {
+    width: 200px;
+}
+
+
+.hzSection {
+    width: 400px;
+    @include flexCenter(row);
+  }
+
+  
+  

@@ -1,0 +1,63 @@
+@import 'base';
+
+.gameButton {
+   background-color: $color3op1;
+   color: $colorW;
+   padding: 10px;
+   font-size: 0.875rem;
+   width: 80px;
+}
+
+.collapseable-div-info {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+.collapseable-div-buttons {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: row;
+}
+
+.gameListCont {
+   width: 100%;
+   @include flexCenter(row);
+   justify-content: space-between;
+}
+
+.gameListContPast {
+   width: 50%;
+   @include flexCenter(row);
+   justify-content: space-between;
+}
+
+@media(max-width: 1200px){
+   .collapseable-div-buttons {
+      display: flex;
+      flex-direction: column;
+   }
+   .collapseable-div-info {
+      display: flex;
+      flex-direction: column;
+   }
+}
+
+@media(max-width: 1000px){
+
+   .listed-image-div {
+      display:none;
+   }
+
+}
+
+@media(max-width: 550px){
+   .gameListCont {
+      @include flexCenter(column);
+      justify-content: left;
+   }
+   .collapseable-div-buttons {
+      flex-direction: row;
+   }
+}
+
